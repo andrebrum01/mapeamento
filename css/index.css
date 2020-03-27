@@ -1,0 +1,174 @@
+/* configurações gerais */
+body,html{
+	margin: 0px auto;
+	padding: 0px auto;
+	font-size: 100%;
+	font-family: sans-serif;
+	width: 100%;
+    height:100%;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+}
+/* root */
+:root{
+    --corPrincipal:#98e2c4;
+    --verde:#98e2a4;
+    --vemelho:#e29898;
+    --roxo:#cb98e2;
+    --azul:#98b8e2;
+    --amarelo:#ebe976;
+    --laranja:#f0bd5e;
+}
+/* paginação */
+.pag1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.item{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tema{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* botão */
+.down{
+    position: absolute;
+    z-index: 2;
+    top:5px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--corPrincipal);
+    border-radius: 100%;
+    background-image: url(../img/down.png);
+    background-position: center;
+    background-size: 80%;
+    background: cover;
+    background-repeat: no-repeat;
+}
+/* color */
+.aumentar{
+    height: 400;
+}
+.color{
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    background-color: lightslategray;
+    border-radius: 25px;
+}
+.paleta{
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    top:70px;
+    height: 0px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: darkgrey;
+    transition: 0.25s ease-in;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+}
+.cor{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+/* ediçoes */
+/* marcar texto */
+.mark{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index:1;
+    position: relative;
+
+}
+.box{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    align-self:center;
+    margin-bottom: 1%;
+}
+.title{
+    z-index:2;
+    position: relative;
+    bottom: 100%;
+}
+/*  */
+.verde{
+    background:var(--verde) ;
+}
+.amarelo{
+    background:var(--amarelo);
+}
+.azul{
+    background: var(--azul) ;
+}
+.roxo{
+    background:var(--roxo);
+}
+.vermelho{
+    background: var(--vemelho);
+}
+.laranja{
+    background: var(--laranja) ;
+}
+/* cores */
+.ponto.verde{
+    background-color: var(--verde);
+}
+.ponto.amarelo{
+    background-color:var(--amarelo);
+}
+.ponto.azul{
+    background-color: var(--azul);
+}
+.ponto.ponto.roxo{
+    background-color:var(--roxo);
+}
+.ponto.vermelho{
+    background-color:var(--vemelho);
+}
+.ponto.laranja{
+    background-color:var(--laranja);
+}
+/* titulos */
+.boxTitle{
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 5px 5px black;
+    
+}
+.titlePrincipal{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.ponto{
+    display: inline-block;
+    border-radius:100%;
+    vertical-align: center;
+    height: 5px;
+    width: 5px;
+    margin-right: 10px;
+}
+
