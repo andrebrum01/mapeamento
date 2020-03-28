@@ -1,3 +1,4 @@
+
 function atualizar(){
     var ponto= "<span class='ponto'></span>";
     var a=$(".item").find(".ponto");
@@ -66,17 +67,12 @@ $(document).mouseup(function(e)
 // onclick
 $(".down").click(function () { 
     var img,name;
-    html2canvas(document.getElementById("a"), {
-        useCORS: true,
-        allowTaint: false,
-        letterRendering: true,
-        logging:true,
-        onrendered: function(canvas) {
+    html2canvas(document.querySelector("#a")).then(
+        canvas=>{
             img = canvas.toDataURL('image/png');            
             name=$(".titlePrincipal").text()+Math.floor(Math.random()*1000)+'.png';
             saveAs(img, name);
-        }
-    });
+        });
     
 });
 
